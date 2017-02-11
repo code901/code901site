@@ -1,0 +1,16 @@
+{
+  "name": "code901",
+  "version": "1.0.0",
+  "description": "code901 website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean McKenna",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "less": "^2.7.2"
+  }
+}
