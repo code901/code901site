@@ -1,5 +1,5 @@
 var views_path = __dirname + '/src/views/';
-var views_engine = 'jade';
+var views_engine = 'pug';
 var landing_view = 'home';
 
 // var css_path = __dirname + '/src/styles/css/';
