@@ -3,17 +3,23 @@
   "version": "1.0.0",
   "description": "code901 website",
   "main": "app.js",
-  "repository": "https://github.com/code901/code901site.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code901/code901site.git"
+  },
   "author": "Sean McKenna",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code901/code901site/issues"
+  },
+  "homepage": "https://github.com/code901/code901site#readme",
   "dependencies": {
+    "compression": "^1.6.2",
     "express": "^4.14.1",
     "express-less": "^0.1.0",
-    "grunt": "^1.0.1",
-    "less": "^2.7.2",
     "pug": "^2.0.0-beta11"
   }
 }

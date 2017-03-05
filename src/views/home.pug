@@ -1,0 +1,86 @@
+html
+  head
+    title=title
+    <!-- Latest compiled and minified CSS -->
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+    link(href='/css/style.css', rel='stylesheet')
+  body
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="author", content="Sean McKenna")
+    meta(name="description", content="Code 901 Software Website")
+    div.navbar-wrapper
+      div.container
+        nav.navbar.navbar-inverse.navbar-fixed-top
+          div.container-fluid
+            div.navbar-header
+              button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              span.navbar-brand Code 901 Logo
+            div#navbar.navbar-collapse.collapse
+              ul.nav.navbar-nav
+                li.active
+                  a(href="#") Home
+                li
+                  a(href="#about") About
+                li
+                  a(href="#contact") Contact Us
+                li.dropdown
+                  a(href="#", data-toggle="dropdown").dropdown-toggle Dropdown
+                    b.caret
+                  ul.dropdown-menu
+                    li
+                      a(href="#action") Action
+                    li
+                      a(href="#action2") Another Action
+                    li.divider
+                    li.dropdown-header Some Context
+                    li
+                      a(href="//www.google.com") Some other site
+    <!-- div.jumbotron
+      div.container-fluid
+        h1 Code 901 Software
+        p Developed in Node using Express, Bootstrap and Less
+        a.glyphicon.glyphicon-search -->
+    div#myCarousel.carousel.slide(data-ride="carousel")
+      ol.carousel-indicators
+        li(data-target="#myCarousel", data-slide-to="0")
+        li.active(data-target="#myCarousel", data-slide-to="1")
+        li(data-target="#myCarousel", data-slide-to="2")
+      div.carousel-inner(role="listbox")
+        div.item
+          img.first-slide(src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", alt="First slide")
+          div.container
+            div.carousel-caption
+              h1 Example headline.
+              p Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+              p
+                a.btn.btn-lg.btn-primary(href="#", role="button") Sign up today
+        div.item.active
+          img.second-slide(src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", alt="Second slide")
+          div.container
+            div.carousel-caption
+              h1 Another example headline.
+              p Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+              p
+                a.btn.btn-lg.btn-primary(href="#", role="button") Sign up today
+        div.item
+          img.third-slide(src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", alt="Third slide")
+          div.container
+            div.carousel-caption
+              h1 Example headline.
+              p Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.
+              p
+                a.btn.btn-lg.btn-primary(href="#", role="button") Sign up today
+      a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
+        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+        span.sr-only Previous
+      a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
+        span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+        span.sr-only Next
+
+    script(src="https://code.jquery.com/jquery-3.1.1.min.js", integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=", crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
