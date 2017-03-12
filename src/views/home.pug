@@ -1,6 +1,6 @@
 doctype html
 
-html
+html(lang="en")
   head
     title=title
     <!-- Latest compiled and minified CSS -->
@@ -13,10 +13,30 @@ html
     meta(name="format-detection", content="telephone=no")
   body
     include partials/navbar.pug
-    div.jumbotron
+    div.jumbotron.top-main
       div.container-fluid
-        h1 Code901 Software
-        p This site is under construction... See you soon!
+        h1 Code 901 Software
+        p We develop custom code for all platforms. Ask us for anything you want, from apps and games to websites. We will develop what you need.
+    div.jumbotron.exp
+      div.container-fluid
+        p
+          | Let our experience work for you! Don't know what your business needs?
+          | Tell us what you're trying to achieve and we can build a custom solution for you
+    div.jumbotron.memphis
+      div.container-fluid
+        p
+          | We are from Memphis so we know what local businesses need and how to
+          | make sure other Memphians get your message. Memphis is one of a kind
+          | and so is your business!
+    div.row.tech.text-center.center-block
+      div.col-sm-3.logo
+        img(src="img/nodejs-logo.png")
+      div.col-sm-3.logo
+        img(src="img/bootstrap-logo.png")
+      div.col-sm-3.logo
+        img(src="img/unity-logo.png")
+      div.col-sm-3.logo
+        img(src="img/github-logo.png")
     //-
       include partials/carousel.pug
 
