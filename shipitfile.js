@@ -26,7 +26,7 @@ module.exports = function (shipit) {
   });
 
   shipit.task('pm2-restart', function(){
-    return shipit.remote('cd ' + shipit.releasePath + ' && pm2 restart process.json --env production').then(function(res){
+    return shipit.remote('cd ' + shipit.releasePath + ' && pm2 delete process.json && pm2 start process.json --env production').then(function(res){
       shipit.emit('pm2-restart-complete');
       return res;
     });
